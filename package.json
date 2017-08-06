@@ -19,7 +19,7 @@
     "test:cov": "cross-env NODE_ENV=test nyc npm test",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "doc:start": "gitbook serve",
-    "doc:deploy": "gitbook build doc/ && gulp document:deploy"
+    "doc:deploy": "gitbook install doc/ && gitbook build doc/ && gulp document:deploy"
   },
   "repository": {
     "type": "git",
